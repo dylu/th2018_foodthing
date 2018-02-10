@@ -2,6 +2,8 @@
  * JS file for editFood.html
  */
 var fooddb;
+var firebase;
+var user = "David";
 
 // var startHold;
 // var startX;
@@ -13,6 +15,22 @@ var editNew;
 var editIdx;
 
 var dc_delay = 800;
+
+
+function setup()
+{
+	var config = {
+	    apiKey: "AIzaSyBIcOSP544-j16gymJHc60h5xGJ2ExL3Lo",
+	    authDomain: "foodthing-63a5a.firebaseapp.com",
+	    databaseURL: "https://foodthing-63a5a.firebaseio.com",
+	    projectId: "foodthing-63a5a",
+	    storageBucket: "",
+	    messagingSenderId: "602811377921"
+	};
+	firebase.initializeApp(config);
+
+	document.getElementById("editShroud").addEventListener("click", listener_clickShroud)
+}
 
 
 /**
@@ -33,9 +51,27 @@ function generateUser()
 /*
  * Retrieves food from user
  */
-function getFoodDB(user)
+function getFoodDB(usr)
 {
-	return generateUser();
+	user = usr;
+
+	var ref = firebase.database().ref('users/'+user+'/food');
+
+
+	ref.on('value', function(snapshot) {
+		fooddb = [];
+
+		for (var key in snapshot.val())
+		{
+			if (!snapshot.val().hasOwnProperty(key)) continue;
+
+			var obj = snapshot.val()[key];
+			fooddb.push(obj);
+
+		}
+
+	resetList();
+	});
 }
 
 
@@ -131,25 +167,22 @@ function sendEdits()
 		return;
 	}
 
-	if (editNew)
+	// if (editNew)
+	if (parseInt(nnum) != 0)
 	{
-		// TODO: Add New Entry to DB.
-
-
-		// update locally
-		fooddb.push(newElem);
-		console.log("adding new element");
-		console.log(fooddb);
+		// Add New Entry to DB / Edit Existing Entry on DB
+		firebase.database().ref('users/'+user+'/food/'+nname).set({
+			0:nname,
+			1:nnum,
+			2:nunit,
+			3:ndesc,
+			4:""
+		});
 	}
 	else
 	{
-		// TODO: Edit Existing Entry in DB.
-
-
-		// update locally
-		fooddb[editIdx] = newElem;
-		console.log("editing old element");
-		console.log(fooddb);
+		// Remove entry in DB.
+		firebase.database().ref('users/'+user+'/food/'+nname).remove();
 	}
 }
 
@@ -194,8 +227,6 @@ function listener_clickElem(e)
 
 	if ((clickTime + dc_delay > currTime) && currentClick == felemParent)
 	{
-		// edit(elem);
-		// edit(e);
 		edit(felemParent.childNodes[1].childNodes[0].innerHTML);
 		// edit(felemParent)
 	}
@@ -374,14 +405,8 @@ function createAddNewElem()
  */
 function populateFood(user)
 {
-	if (!fooddb)
-	{
-		fooddb = getFoodDB(user);
-	}
 	var flist = document.getElementById("foodList");
 	var emptyElem = document.getElementById("emptyList");
-
-	document.getElementById("editShroud").addEventListener("click", listener_clickShroud)
 
 	if (fooddb.length <= 0)
 	{
@@ -389,10 +414,6 @@ function populateFood(user)
 		{
 			emptyElem.classList.remove("hide");
 		}
-		
-		// <li id="emptyList">
-		// 	You have no food listed; would you like to add some?
-		// </li>
 	}
 	else
 	{
@@ -403,8 +424,6 @@ function populateFood(user)
 		
 
 		var listelem;
-		// var elemName, elemNum, elemUnit, elemComm, elemPic;
-		// var sepElem1, sepElem2, sepElem3;
 
 		for (i = 0; i < fooddb.length; i++)
 		{
@@ -413,10 +432,11 @@ function populateFood(user)
 
 			flist.appendChild(listelem);
 		}
-
-		flist.appendChild(createAddNewElem());
 	}
+	flist.appendChild(createAddNewElem());
 }
 
+setup();
 
-populateFood("");
+// populateFood("");
+getFoodDB("David");
