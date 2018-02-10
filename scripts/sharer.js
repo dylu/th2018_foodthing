@@ -1,5 +1,7 @@
 var scoreBoard = document.getElementById("score");
 
+var name;
+var location;
 
 var ctx = canvas.getContext('2d');
 var height = 60;
@@ -26,8 +28,8 @@ var player = {
 document.body.onload = function()
 {
     player.draw();
-};
 
+};
 
 
 

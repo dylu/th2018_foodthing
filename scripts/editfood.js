@@ -115,7 +115,7 @@ function edit(elem)
 		editNew = true;
 
 		document.getElementById("fedit_name").innerHTML = "Name";
-		document.getElementById("fedit_desc").innerHTML = "Desc";
+		document.getElementById("fedit_desc").innerHTML = "Expire/Desc";
 		document.getElementById("fedit_num").innerHTML = "#";
 		document.getElementById("fedit_unit").innerHTML = "Unit";
 	}
@@ -143,7 +143,7 @@ function edit(elem)
 		else
 		{
 			document.getElementById("fedit_name").innerHTML = "Name";
-			document.getElementById("fedit_desc").innerHTML = "Desc";
+			document.getElementById("fedit_desc").innerHTML = "Expire/Desc";
 			document.getElementById("fedit_num").innerHTML = "#";
 			document.getElementById("fedit_unit").innerHTML = "Unit";
 		}
