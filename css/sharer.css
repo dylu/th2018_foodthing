@@ -36,13 +36,11 @@ main {
 	height: 589px;
 	width: 375px;
 	text-align: center;
-	/*background-color: #CCBE21;*/
 }
 
 .profile {
 	color:white;
 	height: 250px;
-	/*border: 1px solid black;*/
 	text-align: center;
 	background-color: #FF9100;
 }
@@ -81,7 +79,7 @@ main {
 
 .foodDiscription {
 	height: 369px;
-	background-color: #F2E29F;
+	background-color: #F7EDCA;
 	padding: 20px;
 }
 

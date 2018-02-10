@@ -2,16 +2,27 @@
  * CSS page
  */
 
+ body {
+	width: 374px;
+	height: 812px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
 #foodList
 {
 	list-style-type: none;
 	margin-left: 0em;
 	padding-left: 0em;
+	margin-top: 0;
 }
 
 header {
-	height: 100px;
-	line-height: 100px;
+	background-color: #F7EDCA;
+	height: 145px;
+	line-height: 145px;
 	width: 375px;
 	text-align: center;
 	color: white;
@@ -19,15 +30,21 @@ header {
 	background-color: #424242;
 }
 
+main {
+	background-color: #F7EDCA;
+}
+
+
+
 #backIcon {
-	position: fixed;
+	position: relative;
+	top: 15px;
+	right: 63px;
 	width: 50px;
 	height: 50px;
 	font-size: 4em;
 	padding: 0;
 	margin: 0;
-	left: 0.1em;
-	top: 0.2em;
 }
 
 #headerTitle {
@@ -35,11 +52,11 @@ header {
 	width: 100%;
 }
 
-body {
+/*body {
 	position: relative;
     padding: 0px;
     margin: 0px;
-}
+}*/
 
 .foodElem
 {
@@ -151,7 +168,7 @@ hr
 	/*padding-bottom: 1em;*/
 	/*padding-left: 1em;*/
 	/*padding-right: 1em;*/
-	background-color: #EEE;
+	background-color: #F7EDCA;
 
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
@@ -214,3 +231,10 @@ hr
 	font-size: 1em;
 }
 
+
+.loupeIcon {
+	float: right;
+	position: relative;
+	top: 50px;
+	right: 20px;
+}
