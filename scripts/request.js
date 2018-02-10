@@ -29,6 +29,10 @@ function createOneElement(nameI, amountI){
 }
 
 function search () {
+	var elements = document.getElementsByClassName("foodBlock");
+	while(elements.length > 0){
+	    elements[0].remove();
+	}
 	var searchItem = document.getElementById("searchBar").value;
 	console.log("in search " + searchItem);
 	getFoodDB(searchItem);
@@ -55,12 +59,18 @@ function getFoodDB(food)
 	firebase.database().ref('users/').on('value', function(snapshot) {
 		console.log(snapshot.val());
 		for (var username in snapshot.val()){
+			console.log("asdf");
 			var ref = firebase.database().ref('users/' + username + '/food/' + food);
 			ref.on('value', function(snapshot) {
-				createOneElement(snapshot.val()[0], snapshot.val()[1]);
+				if (snapshot.val() == null) {
+					
+				}else {
+					console.log("snapshot " + snapshot);
+					createOneElement(snapshot.val()[0], snapshot.val()[1]);
+				}
+				
 			});
 		}
 	});
-
 	return ;
 }
