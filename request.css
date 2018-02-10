@@ -1,0 +1,69 @@
+#theHeader {
+    background-color: black;
+    height: 145px;
+    line-height: 145px;
+    width: 375px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+#header_title{
+	color: white;
+	font-size: 40px;
+}
+#searchBar{
+	width: 375px;
+	height: 40px;
+	background-color: black;
+}
+.foodBlock{
+	width: 375px;
+	height: 40px;
+	background-color: black;
+	position: relative;
+}
+
+.name{
+	position: relative;
+	float: left;
+	top: 5px;
+	left: 5px;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background-color: white;
+	text-align: center;
+	display: block;
+}
+
+.amount{
+	position: relative;
+	float: left;
+	top: 5px;
+	left: 40px;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background-color: white;
+	text-align: center;
+	display: block;
+}
+
+.checkButton{
+	position: relative;
+	float: left;
+	top: 5px;
+	left: 70px;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background-color: white;
+	text-align: center;
+	display: block;
+}
+
+body{
+	position: relative;
+    padding: 0px;
+    margin: 0px;
+}
