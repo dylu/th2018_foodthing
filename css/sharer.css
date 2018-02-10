@@ -1,17 +1,15 @@
 body {
 	width: 374px;
 	height: 812px;
-	position: relative;
     padding: 0px;
     margin: 0px;
-    border: 1px solid black;
     font-family: 'Open Sans', sans-serif;
 }
 
 header {
-	height: 100px;
-	line-height: 100px;
-	width: 375px;
+	height: 145px;
+	line-height: 145px;
+	width: 374px;
 	text-align: center;
 	color: white;
 	font-size: 1.6em;
@@ -19,24 +17,22 @@ header {
 }
 
 #backIcon {
-	position: fixed;
+	position: relative;
+	top: 15px;
+	right: 30px;
 	width: 50px;
 	height: 50px;
 	font-size: 4em;
 	padding: 0;
 	margin: 0;
-	left: 0.1em;
-	top: 0.2em;
 }
 
 #headerTitle {
-	position: relative;
 	width: 100%;
 }
 
 
 main {
-	margin-top: 20px;
 	height: 589px;
 	width: 375px;
 	text-align: center;
@@ -45,8 +41,6 @@ main {
 
 .profile {
 	color:white;
-	position: relative;
-	top: -20px;
 	height: 250px;
 	/*border: 1px solid black;*/
 	text-align: center;
@@ -55,7 +49,7 @@ main {
 
 .profileContent {
 	height: 140px;
-	margin-top: 20px;
+	padding-top: 10px;
 
 }
 
@@ -85,22 +79,41 @@ main {
 	padding-bottom: 5px;
 }
 
-.wishlist table{
-    border-collapse: collapse;
-	margin-bottom: 1.5em;
+.foodDiscription {
+	height: 369px;
+	background-color: #F2E29F;
+	padding: 20px;
 }
 
-.wishlist th, td {
-    border: 1px solid black;
-    padding: 8px;
+.requestRow {
+	border: 1px solid #F9AC5E;
+	margin: 0px 10px  10px 10px;
+	border-radius: 20px;
+	background-color: #F9AC5E;
+
 }
 
-.wishlist td{
-    text-align: left;
+.foodRequstTag {
+	text-align: left;
+	padding-left: 20px;
+
+}
+
+.requestContentName {
+	font-weight: 900;
+	font-size: 20px;
+	margin-left: 10px;
+}
+
+
+
+.icons {
+	margin-top: 10px;
 }
 
 .icons a{
 	padding: 0 3%;
+
 }
 
 
