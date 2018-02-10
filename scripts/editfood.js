@@ -14,7 +14,7 @@ var clickTime;
 var editNew;
 var editIdx;
 
-var dc_delay = 800;
+var dc_delay = 1200;
 
 
 function setup()
@@ -263,7 +263,7 @@ function createElem(foodElem)
 	}
 	else
 	{
-		elemImg.src = "http://static.hdw.eweb4.com/media/wallpapers_1920x1200/animals/1/1/curious-cat-animal-hd-wallpaper-1920x1200-4257.jpg";
+		elemImg.src = "./images/forkAndKnife.png";
 	}
 	elemImg.classList.add("food_img");
 	

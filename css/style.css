@@ -66,7 +66,7 @@ main {
 	/*padding-bottom: 1em;*/
 	/*padding-left: 1em;*/
 	/*padding-right: 1em;*/
-	background-color: #DDD;
+	background-color: #F7B05B;
 
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
@@ -107,8 +107,9 @@ hr
 
 .food_img
 {
-	width: 5em;
-	height: 5em;
+	width: 3em;
+	height: 3em;
+	padding: 1em 1em ;
 }
 
 
