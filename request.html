@@ -18,15 +18,22 @@
 		</script>
     </head>
     <body onload="loadFood()">
-        <div id="theHeader">
-            <h1 id="header_title">Request</h1>
-        </div>
-        <input id="searchBar"></input>
-        <div id="anchor"></div>
-        <div class="foodBlock">
-			<div class="name">name</div>
-			<div class="amount">amount</div>
-			<button class="checkButton">check</button>
-        </div>
+    	<header class="homeHeader">
+			<div>
+				<a href="editFood.html"><img class="headerIcon cartIcon" src="images/cart.png"></a>
+				<span>MyPage</span>
+				<a href="request.html"><img class="headerIcon loupeIcon" src="images/loupe.png"></a>
+			</div>
+		</header>
+		<main>
+			<div class="searchBarContainer">
+				<input id="searchBar"></input>
+			</div>
+	        <div class="foodBlock">
+				<div class="name">name</div>
+				<div class="amount">amount</div>
+				<button class="checkButton">check</button>
+	        </div>
+		</main>
     </body>
 </html>

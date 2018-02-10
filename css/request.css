@@ -1,3 +1,42 @@
+body {
+	width: 375px;
+	height: 812px;
+	border: 1px solid bla;
+}
+
+
+.homeHeader {
+	height: 140px;
+	line-height: 140px;
+	width: 343px;
+	padding: 0px 16px;
+	text-align: center;
+	border: 1px solid black;
+	background-color: gray;
+}
+
+
+.headerIcon {
+	max-height: 8%;
+	max-width:  8%;
+}
+
+.cartIcon {
+	float: left;
+	position: relative;
+	top: 50px;
+	left: 20px;
+}
+
+.loupeIcon {
+	float: right;
+	position: relative;
+	top: 50px;
+	right: 20px;
+}
+
+
+
 #theHeader {
     background-color: black;
     height: 145px;
@@ -11,10 +50,17 @@
 	color: white;
 	font-size: 40px;
 }
+
+.searchBarContainer {
+	padding: 0px 16px;
+}
+
+
 #searchBar{
-	width: 375px;
-	height: 40px;
-	background-color: black;
+	width: 80%;
+	border-radius: 5px;
+	height: 25px;
+	margin: 5px auto;
 }
 .foodBlock{
 	width: 375px;
