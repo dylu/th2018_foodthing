@@ -11,7 +11,7 @@
 
 .foodElem
 {
-	height: 6em;
+	height: 5em;
 	margin-bottom: 0.5em;
 	/*padding-top: 1em;*/
 	/*padding-bottom: 1em;*/
@@ -22,6 +22,12 @@
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	/*font-size: 1.6em;*/
+}
+
+hr
+{
+	margin-top: 4px;
+	margin-bottom: 4px;
 }
 
 
@@ -37,7 +43,7 @@
 	display: inline-block;
 	padding-left: 1em;
 	padding-top: 0.4em;
-	width: 60%;
+	width: 55%;
 }
 
 .food_div_R
@@ -52,14 +58,14 @@
 
 .food_img
 {
-	width: 6em;
-	height: 6em;
+	width: 5em;
+	height: 5em;
 }
 
 
 .food_name
 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 }
 
 .food_comments
@@ -70,7 +76,7 @@
 .food_num
 {
 	padding-top: 0.1em;
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
 .food_unit
@@ -107,7 +113,7 @@
 
 	width: 96%;
 
-	height: 6em;
+	height: 5em;
 	margin-bottom: 0.5em;
 	/*padding-top: 1em;*/
 	/*padding-bottom: 1em;*/
@@ -133,7 +139,7 @@
 	display: inline-block;
 	padding-left: 1em;
 	padding-top: 0.4em;
-	width: 60%;
+	width: 55%;
 }
 
 #fedit_R
@@ -148,14 +154,14 @@
 
 #fedit_image
 {
-	width: 6em;
-	height: 6em;
+	width: 5em;
+	height: 5em;
 }
 
 
 #fedit_name
 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 }
 
 #fedit_desc
@@ -166,7 +172,7 @@
 #fedit_num
 {
 	padding-top: 0.1em;
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
 #fedit_unit

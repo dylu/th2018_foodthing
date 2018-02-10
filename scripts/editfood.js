@@ -359,7 +359,7 @@ function createAddNewElem()
 	elemName.classList.add("food_name");
 
 	elemComm = document.createElement("span");
-	elemComm.innerHTML = "Double Click to Add New Entry.";
+	elemComm.innerHTML = "Double Click to Add Entry.";
 	elemComm.classList.add("food_comments");
 
 	divM.appendChild(elemName);
