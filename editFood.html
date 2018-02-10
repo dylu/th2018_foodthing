@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>Title: Test HTML5 Page</title>
+	<title>Food List</title>
 	
 	<meta name="description" content="Description: Testing an HTML5 page.">
 	<meta name="author" content="dlu">
@@ -22,11 +22,37 @@
 		- - -
 	</header>
 	
+	<div id="foodEdit" class="hide">
+		<div id="fedit_L">
+			<div id="fedit_image">
+			</div>
+		</div>
+		<div id="fedit_M">
+			<span contenteditable="true" id="fedit_name">
+				Name
+			</span>
+			<hr>
+			<span contenteditable="true" id="fedit_desc">
+				Desc
+			</span>
+		</div>
+		<div id="fedit_R">
+			<div contenteditable="true" id="fedit_num">
+				#
+			</div>
+			<div contenteditable="true" id="fedit_unit">
+				unit
+			</div>
+		</div>
+	</div>
+
+	<div id="editShroud" class="hide">
+	</div>
 
 	<div id="foodListDiv">
 		<ul id="foodList">
 			<li id="emptyList">
-			You have no food listed; would you like to add some?
+				You have no food listed; would you like to add some?
 			</li>
 		</ul>
 	</div>

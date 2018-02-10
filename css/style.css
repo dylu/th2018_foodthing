@@ -79,3 +79,100 @@
 	padding-top: 0.2em;
 	font-size: 1em;
 }
+
+.hide
+{
+	display: none;
+}
+
+#editShroud
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+	width: 100%;
+	background-color: rgba(110, 110, 110, .6);
+	z-index: 60;
+}
+
+#foodEdit
+{
+	/*display: none;*/
+	z-index: 100;
+
+	position: fixed;
+	top: 2em;
+
+	width: 96%;
+
+	height: 6em;
+	margin-bottom: 0.5em;
+	/*padding-top: 1em;*/
+	/*padding-bottom: 1em;*/
+	/*padding-left: 1em;*/
+	/*padding-right: 1em;*/
+	background-color: #EEE;
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	/*font-size: 1.6em;*/
+}
+
+
+#fedit_L
+{
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+
+#fedit_M
+{
+	display: inline-block;
+	padding-left: 1em;
+	padding-top: 0.4em;
+	width: 60%;
+}
+
+#fedit_R
+{
+	width: 3em;
+	padding-top: 0.6em;
+	padding-right: 0.6em;
+	text-align: center;
+	float: right;
+}
+
+
+#fedit_image
+{
+	width: 6em;
+	height: 6em;
+}
+
+
+#fedit_name
+{
+	font-size: 1.8em;
+}
+
+#fedit_desc
+{
+	font-size: 1em;
+}
+
+#fedit_num
+{
+	padding-top: 0.1em;
+	font-size: 2em;
+}
+
+#fedit_unit
+{
+	/*position: fixed;*/
+	padding-top: 0.2em;
+	font-size: 1em;
+}
+
