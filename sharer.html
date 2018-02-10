@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sharer's Profile</title>
+	<link rel="stylesheet" type="text/css" href="css/sharer.css">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+</head>
+<body>
+	<header>
+
+		<div>
+			<a onclick="alert('alert')"><img class="headerIcon backIcon" src="images/back.png"></a>
+			<span>Sharer's Profile</span>
+		</div>
+	</header>
+	<main>
+		<div class="profile">
+			<img class="profile-picture" src="images/sample-profile.jpg"> <!-- add person's Profile pic -->
+			<a><img class="sampleStar" src="images/star.png"></a>
+			<a><img class="sampleStar" src="images/star.png"></a>
+			<a><img class="sampleStar" src="images/star.png"></a>
+			<a><img class="sampleStar" src="images/emptystar.png"></a>
+			<a><img class="sampleStar" src="images/emptystar.png"></a>
+			<p class="profile-	name">Jean Jaeger</p> <!-- add person's name -->
+			<p class="profile-location">Location : Morewood Gardens 5th Floor</p> <!-- add person's Location -->
+		</div>
+
+		<p>Resquest: Banana</p> <!-- add requested item -->
+		<p>Amount available: 5</p> <!-- add person's available amount -->
+		<div class="wishlist">
+			<table>
+				<tr>
+					<th colspan="2">Wishlist</th>
+				</tr>
+				<tr>
+					<td>Apple</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>Whipped Cream</td>
+					<td>1 can</td>
+				</tr>
+			</table>
+
+		</div>
+
+		<div class="icons"> 
+			<a href="mailto:example@gmail.com"><img src="images/email.png"></a> <!-- add person's email -->
+			<a href="https://www.facebook.com/ZuckerbergeCO/"><img src="images/facebook.png"></a> <!-- add person's facebook -->
+			<a href=""><img src="images/phone.png"></a> <!-- add person's Phone -->
+		</div>
+
+
+	</main>
+	<footer></footer>
+
+	<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+	<script>
+  		// Initialize Firebase
+  		var config = {
+    	apiKey: "AIzaSyBgr9dc1CGuO6vUfr_AfctngWArO2u1AmQ",
+    	authDomain: "foodsharer-b5ed1.firebaseapp.com",
+    	databaseURL: "https://foodsharer-b5ed1.firebaseio.com",
+    	projectId: "foodsharer-b5ed1",
+    	storageBucket: "foodsharer-b5ed1.appspot.com",
+    	messagingSenderId: "631789132460"
+  		};
+  		firebase.initializeApp(config);
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+	<script type="text/javascript" src="scripts/home.js"></script>
+</head>
+<body>
+	<header class="homeHeader">
+		<div>
+			<a><img class="headerIcon cartIcon" src="images/cart.png"></a>
+			<span>MyPage</span>
+			<a><img class="headerIcon loupeIcon" src="images/loupe.png"></a>
+		</div>
+	</header>
+	<main class="homeMain">
+		<div class="profile">
+			<div class="profileContent">
+				<a><img class="profilePic" src="images/sample-profile.jpg"></a>
+				<a><img class="ratingStar" src="images/blackStar.png"></a>
+				<a><img class="ratingStar" src="images/emptyStar.png"></a>
+				<a><img class="ratingStar" src="images/emptyStar.png"></a>
+				<a><img class="ratingStar" src="images/emptyStar.png"></a>
+				<a><img class="ratingStar" src="images/emptyStar.png"></a>
+				<p>Pierre</p>
+			</div>
+		</div>
+		<div class="profileButton foodList">
+			<div class="foodRow row1" id="row1">
+				<span class="foodName">tomato</span>
+				<a><img class="removeButton" src="images/cross.png" onclick="removeList(this)"></a>
+				<!-- <span class="remove" id="remove">remove</span> -->
+			</div>
+			<div class="foodRow row2">
+				<span class="foodName">beef</span>
+				<a><img class="removeButton" src="images/cross.png" onclick="removeList(this)"></a>
+			</div>
+			<div class="foodRow row3">
+				<span class="foodName">salad</span>
+				<a><img class="removeButton" src="images/cross.png" onclick="removeList(this)"></a>
+			</div>
+			<div class="foodRow row4">
+				<span class="foodName">cereal</span>
+				<a><img class="removeButton" src="images/cross.png" onclick="removeList(this)"></a>
+			</div>
+		</div>
+		<div></div>
+	</main>
+	<footer></footer>
+
+</body>
+</html>

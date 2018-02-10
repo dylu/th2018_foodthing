@@ -1,0 +1,73 @@
+header {
+	height: 140px;
+	width: 343px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.headerIcon {
+	max-height: 8%;
+	max-width:  8%;
+}
+
+.backIcon {
+	float: left;
+	position: relative;
+	top: 50px;
+	left: 20px;
+}
+
+
+main {
+	height: 589px;
+	width: 343px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.profile {
+	height: 200px;
+	border-spacing: 15px;
+	border: 1px solid black;
+}
+
+.profile-picture {
+	max-height: 40%;
+	max-width: 40%;
+	display: block;
+	margin: 0 auto;
+}
+
+.sampleStar {
+	max-height: 10%;
+	max-width: 10%;
+	margin-top: 10px;
+}
+
+.profile-name {
+
+}
+
+.profile-location {
+}
+
+.wishlist table{
+    border-collapse: collapse;
+}
+
+.wishlist th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+.icons a{
+	padding: 03%;
+}
+
+
+
+
+
+
