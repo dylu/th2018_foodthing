@@ -1,53 +1,79 @@
 <!DOCTYPE html>
-<html>
+
+<html lang = "en">
+
 <head>
-	<title>Main Page</title>
-	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<meta charset="UTF-8">
+
+	<title>Food List</title>
+	
+	<meta name="description" content="Description: Testing an HTML5 page.">
+	<meta name="author" content="dlu">
 	<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
-	<script type="text/javascript" src="scripts/home.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
 </head>
+
+
 <body>
-	<header class="homeHeader">
+	<header>
+		
 		<div>
-			<a href="editFood.html"><img class="headerIcon cartIcon" src="images/cart.png"></a>
-			<span>MyPage</span>
-			<a href="request.html"><img class="headerIcon loupeIcon" src="images/loupe.png"></a>
+			<span id="backIcond"><a href="request.html"><img id="backIcon" src="https://png.icons8.com/ios/1600/back.png"></a></span>
+			<!-- <span id="backIcon"><a href="request.html">&lt;</a></span> -->
+			<span id="headerTitle">Sharer's Profile</span>
 		</div>
 	</header>
-	<main class="homeMain">
-		<div class="profile">
-			<div class="profileContent">
-				<a><img class="profilePic" src="images/sample-profile.jpg"></a>
-				<a><img class="ratingStar" src="images/star.png"></a>
-				<a><img class="ratingStar" src="images/emptyStar.png"></a>
-				<a><img class="ratingStar" src="images/emptyStar.png"></a>
-				<a><img class="ratingStar" src="images/emptyStar.png"></a>
-				<a><img class="ratingStar" src="images/emptyStar.png"></a>
-				<p class="profile-name">Kohei Arai</p>
+	
+	<div id="foodEdit" class="hide">
+		<div id="fedit_L">
+			<div id="fedit_image">
 			</div>
 		</div>
-		<div class="profileButton foodList">
-			<div class="foodRow row1" id="row1">
-				<span class="foodName">tomato</span>
-				<a><img class="removeButton" src="images/cross.png" onclick="removeList(this)"></a>
-				<!-- <span class="remove" id="remove">remove</span> -->
+		<div id="fedit_M">
+			<span contenteditable="true" id="fedit_name">
+				Name
+			</span>
+			<hr>
+			<span contenteditable="true" id="fedit_desc">
+				Desc
+			</span>
+		</div>
+		<div id="fedit_R">
+			<div contenteditable="true" id="fedit_num">
+				#
 			</div>
-			<div class="foodRow row2">
-				<span class="foodName">beef</span>
-				<a><img class="removeButton" src="images/cross.png" onclick="removeList(this)"></a>
-			</div>
-			<div class="foodRow row3">
-				<span class="foodName">salad</span>
-				<a><img class="removeButton" src="images/cross.png" onclick="removeList(this)"></a>
-			</div>
-			<div class="foodRow row4">
-				<span class="foodName">cereal</span>
-				<a><img class="removeButton" src="images/cross.png" onclick="removeList(this)"></a>
+			<div contenteditable="true" id="fedit_unit">
+				unit
 			</div>
 		</div>
-		<div></div>
-	</main>
-	<footer></footer>
+	</div>
+
+	<div id="editShroud" class="hide">
+	</div>
+
+	<div id="foodListDiv">
+		<ul id="foodList">
+			<li id="emptyList">
+				You have no food listed; would you like to add some?
+			</li>
+		</ul>
+	</div>
+
+
+
+	<!-- <p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p> -->
+
+	<!-- End of Document; Start of (Java)scripts -->
+	<script src="scripts/editfood.js"></script>
 
 </body>
+
+
+
+
 </html>

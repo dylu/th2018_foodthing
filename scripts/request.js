@@ -17,8 +17,11 @@ function createOneElement(nameI, amountI){
 
 	var checkButton = document.createElement("button");
 	checkButton.setAttribute("class", "checkButton");
+	var hyperLink = document.createElement("a");
+	hyperLink.setAttribute("href", "sharer.html");
 	var checkButtonText = document.createTextNode("check");
-	checkButton.appendChild(checkButtonText);
+	hyperLink.appendChild(checkButtonText);
+	checkButton.appendChild(hyperLink);
 
 	foodBlock.appendChild(name);
 	foodBlock.appendChild(amount);
