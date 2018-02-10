@@ -15,22 +15,24 @@
 	</header>
 	<main>
 		<div class="profile">
-			<img class="profile-picture" src="images/sample-profile.jpg"> <!-- add person's Profile pic -->
-			<a><img class="sampleStar" src="images/star.png"></a>
-			<a><img class="sampleStar" src="images/star.png"></a>
-			<a><img class="sampleStar" src="images/star.png"></a>
-			<a><img class="sampleStar" src="images/emptystar.png"></a>
-			<a><img class="sampleStar" src="images/emptystar.png"></a>
-			<p class="profile-	name">Jean Jaeger</p> <!-- add person's name -->
-			<p class="profile-location">Location : Morewood Gardens 5th Floor</p> <!-- add person's Location -->
+			<div class="profileContent">
+				<img class="profile-picture" src="images/sample-profile.jpg"> <!-- add person's Profile pic -->
+				<a><img class="sampleStar" src="images/star.png"></a>
+				<a><img class="sampleStar" src="images/star.png"></a>
+				<a><img class="sampleStar" src="images/star.png"></a>
+				<a><img class="sampleStar" src="images/emptystar.png"></a>
+				<a><img class="sampleStar" src="images/emptystar.png"></a>
+				<p class="profile-name">Jean Jaeger</p> <!-- add person's name -->
+				<p class="profile-location">Location : Morewood Gardens 5th Floor</p> <!-- add person's Location -->
+			</div>
 		</div>
 
-		<p>Resquest: Banana</p> <!-- add requested item -->
-		<p>Amount available: 5</p> <!-- add person's available amount -->
-		<div class="wishlist">
-			<table>
+		<p>Your resquest: Banana</p> <!-- add name and requested item -->
+		<p>Jean's amount: 5</p> <!-- add name and person's available amount -->
+		<div class="wishlist"> <!-- add all his items -->
+			<table align="center">
 				<tr>
-					<th colspan="2">Wishlist</th>
+					<th colspan="2">Jean's Wishlist</th> <!-- add name -->
 				</tr>
 				<tr>
 					<td>Apple</td>
@@ -53,22 +55,6 @@
 
 	</main>
 	<footer></footer>
-
-	<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
-	<script>
-  		// Initialize Firebase
-  		var config = {
-    	apiKey: "AIzaSyBgr9dc1CGuO6vUfr_AfctngWArO2u1AmQ",
-    	authDomain: "foodsharer-b5ed1.firebaseapp.com",
-    	databaseURL: "https://foodsharer-b5ed1.firebaseio.com",
-    	projectId: "foodsharer-b5ed1",
-    	storageBucket: "foodsharer-b5ed1.appspot.com",
-    	messagingSenderId: "631789132460"
-  		};
-  		firebase.initializeApp(config);
-	</script>
-
-
 </body>
 
 </html>

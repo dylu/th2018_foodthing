@@ -7,7 +7,7 @@ var player = {
 	hitbox: new Rectangle(canvas.width/2, canvas.height-height, width, height),
 	color: "green",
 	draw: function() {
-    	this.hitbox.draw(ctx, this.color);
+	this.hitbox.draw(ctx, this.color);
 	}
 	erase: function(){
 		clearRect(ctx, this.hitbox);
