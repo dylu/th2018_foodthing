@@ -1,3 +1,6 @@
+var username1 = "Adrian";
+var username2 = "David";
+
 function createOneElement(nameI, amountI){
 	var foodBlock = document.createElement("div");
 	foodBlock.setAttribute("class", "foodBlock");
@@ -25,16 +28,39 @@ function createOneElement(nameI, amountI){
 	anchor.appendChild(foodBlock);
 }
 
-function loadFood (){
+function search () {
+	var searchItem = document.getElementById("searchBar").value;
+	console.log("in search " + searchItem);
+	getFoodDB(searchItem);
+}
+
+// ref.on('value', function(snapshot) {
+// 		console.log('db value call');
+
+// 		for (var key in snapshot.val())
+// 		{
+// 			if (!snapshot.val().hasOwnProperty(key)) continue;
+
+// 			var obj = snapshot.val()[key];
+// 			fooddb.push(obj);
+
+// 		}
+
+// 	resetList();
+// 	});
+
+function getFoodDB(food)
+{	
 	var database = firebase.database();
-	var ref = firebase.database().ref('test/username');
-	firebase.database().ref('test').set({
-	    username: "test"
-	  });
-	ref.on('value', function(snapshot) {
-	  console.log("read " + snapshot.val());
+	firebase.database().ref('users/').on('value', function(snapshot) {
+		console.log(snapshot.val());
+		for (var username in snapshot.val()){
+			var ref = firebase.database().ref('users/' + username + '/food/' + food);
+			ref.on('value', function(snapshot) {
+				createOneElement(snapshot.val()[0], snapshot.val()[1]);
+			});
+		}
 	});
-	createOneElement("apple", 1);
-	createOneElement("banana", 2);
-	createOneElement("banana", 3);
+
+	return ;
 }

@@ -55,6 +55,12 @@ body {
 	padding: 0px 16px;
 }
 
+#searchButton{
+	float: right;
+	width: 20%;
+	height: 40px;
+	background-color: white;
+}
 
 #searchBar{
 	width: 80%;
